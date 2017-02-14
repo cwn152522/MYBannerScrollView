@@ -1,0 +1,2 @@
+# MYBannerScrollView
+图片轮播，用三个imageView结合autolayout实现，使用网络封装库MYNetwork进行网络请求 
