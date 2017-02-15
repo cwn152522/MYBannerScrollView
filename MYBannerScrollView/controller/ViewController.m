@@ -59,30 +59,6 @@ static NSString *const kCellIdentifier = @"cellIdentifier";
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark MYBannerScrollViewDelegate
-
-- (void)bannerScrollView:(MYBannerScrollView *)bannerScrollView didClickScrollView:(NSInteger)pageIndex{
-    NSString *message;
-    switch (bannerScrollView.tag) {
-        case kHeaderBannerTag:{
-            message = [NSString stringWithFormat:@"点击了头部视图的bannerScrollView的第%ld张图片" ,pageIndex];
-        }
-            break;
-            
-        default:{
-            message = [NSString stringWithFormat:@"点击了第%ld个section的bannerScrollView的第%ld张图片", bannerScrollView.tag ,pageIndex];
-        }
-            break;
-    }
-    
-    UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        
-    }];
-    [controller addAction:cancel];
-    [self presentViewController:controller animated:YES completion:nil];
-}
-
 #pragma mark UITableViewDatasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -147,6 +123,30 @@ static NSString *const kCellIdentifier = @"cellIdentifier";
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     [_bannerview scrollViewDidScroll:_tableView];
+}
+
+#pragma mark MYBannerScrollViewDelegate
+
+- (void)bannerScrollView:(MYBannerScrollView *)bannerScrollView didClickScrollView:(NSInteger)pageIndex{
+    NSString *message;
+    switch (bannerScrollView.tag) {
+        case kHeaderBannerTag:{
+            message = [NSString stringWithFormat:@"点击了头部视图的bannerScrollView的第%ld张图片" ,pageIndex];
+        }
+            break;
+            
+        default:{
+            message = [NSString stringWithFormat:@"点击了第%ld个section的bannerScrollView的第%ld张图片", bannerScrollView.tag ,pageIndex];
+        }
+            break;
+    }
+    
+    UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    [controller addAction:cancel];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 
 @end

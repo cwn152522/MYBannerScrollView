@@ -106,7 +106,6 @@
     [_rightImageView setLayoutBottomFromSuperViewWithConstant:0];
     
     [_centerImageView addTarget:self action:@selector(onClickImageView) forControlEvents:UIControlEventTouchUpInside];
-    [self loadImages:@[@"morenbanner"] estimateSize:CGSizeZero];//加载默认图
 }
 
 - (void)configContentViews{
@@ -118,6 +117,7 @@
     [_leftImageView loadImageWithImagePath:[self.imagePaths objectSafetyAtIndex:[self checkNextPageIndex:_currentPageIndex-1]]];
     [_centerImageView loadImageWithImagePath:[self.imagePaths objectSafetyAtIndex:[self checkNextPageIndex:_currentPageIndex]]];
     [_rightImageView loadImageWithImagePath:[self.imagePaths objectSafetyAtIndex:[self checkNextPageIndex:_currentPageIndex+1]]];
+    
     [_scrollView setContentOffset:CGPointMake(_estimateSize.width, 0)];//此处若开启动画属性就会发现：第一或第三张图片url先变化了，然后才滚回第二张图片，显示上一个或下一个url
 }
 
