@@ -173,6 +173,7 @@
         [_timer pauseTimer];
     }
     
+    _currentPageIndex = 0;
     [self configContentViews];
     [_centerImageView addTarget:self action:@selector(onClickImageView) forControlEvents:UIControlEventTouchUpInside];
     
