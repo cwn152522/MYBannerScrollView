@@ -11,9 +11,10 @@
 		BEF9F4EE1E52FD4000C26E93 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4EA1E52FD4000C26E93 /* NSTimer+Addition.m */; };
 		BEF9F4EF1E52FD4000C26E93 /* UIView+CWNView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4EC1E52FD4000C26E93 /* UIView+CWNView.m */; };
 		BEF9F4F21E52FD5800C26E93 /* MYNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF9F4F11E52FD5800C26E93 /* MYNetwork.framework */; };
-		BEF9F4F81E52FD7C00C26E93 /* MYBannerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4F51E52FD7C00C26E93 /* MYBannerImageView.m */; };
-		BEF9F4F91E52FD7C00C26E93 /* MYBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4F71E52FD7C00C26E93 /* MYBannerScrollView.m */; };
 		BEF9F4FD1E52FDA600C26E93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4FC1E52FDA600C26E93 /* ViewController.m */; };
+		BEF9F5031E5301E100C26E93 /* MYBannerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F5001E5301E100C26E93 /* MYBannerImageView.m */; };
+		BEF9F5041E5301E100C26E93 /* MYBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F5021E5301E100C26E93 /* MYBannerScrollView.m */; };
+		BEF9F5081E53021600C26E93 /* MYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F5071E53021600C26E93 /* MYTableViewCell.m */; };
 		D65689DF1DB99DA500CEFFD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65689DE1DB99DA500CEFFD3 /* main.m */; };
 		D65689E21DB99DA500CEFFD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65689E11DB99DA500CEFFD3 /* AppDelegate.m */; };
 		D65689E81DB99DA500CEFFD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65689E61DB99DA500CEFFD3 /* Main.storyboard */; };
@@ -48,12 +49,14 @@
 		BEF9F4EB1E52FD4000C26E93 /* UIView+CWNView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CWNView.h"; sourceTree = "<group>"; };
 		BEF9F4EC1E52FD4000C26E93 /* UIView+CWNView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CWNView.m"; sourceTree = "<group>"; };
 		BEF9F4F11E52FD5800C26E93 /* MYNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MYNetwork.framework; sourceTree = "<group>"; };
-		BEF9F4F41E52FD7C00C26E93 /* MYBannerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerImageView.h; sourceTree = "<group>"; };
-		BEF9F4F51E52FD7C00C26E93 /* MYBannerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerImageView.m; sourceTree = "<group>"; };
-		BEF9F4F61E52FD7C00C26E93 /* MYBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerScrollView.h; sourceTree = "<group>"; };
-		BEF9F4F71E52FD7C00C26E93 /* MYBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerScrollView.m; sourceTree = "<group>"; };
 		BEF9F4FB1E52FDA600C26E93 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BEF9F4FC1E52FDA600C26E93 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEF9F4FF1E5301E100C26E93 /* MYBannerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerImageView.h; sourceTree = "<group>"; };
+		BEF9F5001E5301E100C26E93 /* MYBannerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerImageView.m; sourceTree = "<group>"; };
+		BEF9F5011E5301E100C26E93 /* MYBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerScrollView.h; sourceTree = "<group>"; };
+		BEF9F5021E5301E100C26E93 /* MYBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerScrollView.m; sourceTree = "<group>"; };
+		BEF9F5061E53021600C26E93 /* MYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell.h; sourceTree = "<group>"; };
+		BEF9F5071E53021600C26E93 /* MYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell.m; sourceTree = "<group>"; };
 		D65689DA1DB99DA500CEFFD3 /* MYBannerScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYBannerScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65689DE1DB99DA500CEFFD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D65689E01DB99DA500CEFFD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,10 +123,8 @@
 		BEF9F4F31E52FD7C00C26E93 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				BEF9F4F41E52FD7C00C26E93 /* MYBannerImageView.h */,
-				BEF9F4F51E52FD7C00C26E93 /* MYBannerImageView.m */,
-				BEF9F4F61E52FD7C00C26E93 /* MYBannerScrollView.h */,
-				BEF9F4F71E52FD7C00C26E93 /* MYBannerScrollView.m */,
+				BEF9F4FE1E5301E100C26E93 /* banner */,
+				BEF9F5051E5301FB00C26E93 /* cell */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -135,6 +136,26 @@
 				BEF9F4FC1E52FDA600C26E93 /* ViewController.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		BEF9F4FE1E5301E100C26E93 /* banner */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9F4FF1E5301E100C26E93 /* MYBannerImageView.h */,
+				BEF9F5001E5301E100C26E93 /* MYBannerImageView.m */,
+				BEF9F5011E5301E100C26E93 /* MYBannerScrollView.h */,
+				BEF9F5021E5301E100C26E93 /* MYBannerScrollView.m */,
+			);
+			path = banner;
+			sourceTree = "<group>";
+		};
+		BEF9F5051E5301FB00C26E93 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9F5061E53021600C26E93 /* MYTableViewCell.h */,
+				BEF9F5071E53021600C26E93 /* MYTableViewCell.m */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		D65689D11DB99DA500CEFFD3 = {
@@ -338,11 +359,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF9F4EF1E52FD4000C26E93 /* UIView+CWNView.m in Sources */,
-				BEF9F4F91E52FD7C00C26E93 /* MYBannerScrollView.m in Sources */,
 				BEF9F4FD1E52FDA600C26E93 /* ViewController.m in Sources */,
+				BEF9F5041E5301E100C26E93 /* MYBannerScrollView.m in Sources */,
 				BEF9F4ED1E52FD4000C26E93 /* NSArray+ExtraMethod.m in Sources */,
 				D65689E21DB99DA500CEFFD3 /* AppDelegate.m in Sources */,
-				BEF9F4F81E52FD7C00C26E93 /* MYBannerImageView.m in Sources */,
+				BEF9F5081E53021600C26E93 /* MYTableViewCell.m in Sources */,
+				BEF9F5031E5301E100C26E93 /* MYBannerImageView.m in Sources */,
 				D65689DF1DB99DA500CEFFD3 /* main.m in Sources */,
 				BEF9F4EE1E52FD4000C26E93 /* NSTimer+Addition.m in Sources */,
 			);
