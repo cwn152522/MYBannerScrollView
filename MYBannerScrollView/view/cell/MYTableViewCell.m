@@ -52,8 +52,6 @@
         _bannerview = [[MYBannerScrollView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, 200)];
         [_bannerview setAutoDuration:5];
         [_bannerview setDelegate:self];
-        [_bannerview setUseVerticalParallaxEffect:YES];
-        [_bannerview setUseScaleEffect:YES];
     }
     return _bannerview;
 }

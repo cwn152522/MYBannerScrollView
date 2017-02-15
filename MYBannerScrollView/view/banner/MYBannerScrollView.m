@@ -157,8 +157,10 @@
         self.pageControl.currentPage = 0;
         
         if(_enableTimer){
+            if(!_timer){//定时器未加载
         _timer = [NSTimer scheduledTimerWithTimeInterval:_autoDuration target:self selector:@selector(timerDidFired:) userInfo:nil repeats:YES];
         [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+            }
         [_timer pauseTimer];
         [_timer resumeTimerAfterTimeInterval:_autoDuration];
         }
@@ -168,7 +170,7 @@
         _scrollView.scrollEnabled = NO;
         [self.pageControl setHidden:YES];
         self.pageControl.numberOfPages = 0;
-        [_timer invalidate];
+        [_timer pauseTimer];
     }
     
     [self configContentViews];

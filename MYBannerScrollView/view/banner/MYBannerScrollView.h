@@ -29,7 +29,6 @@
 @property (assign, nonatomic) BOOL useVerticalParallaxEffect;
 @property (assign, nonatomic) BOOL useScaleEffect;
 
-//未对重复调用loadImages进行具体处理，仅是return，因此暂时只能轮播一组图片
 - (void)loadImages:(NSArray *)imagePaths estimateSize:(CGSize)estimateSize;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 

@@ -12,7 +12,7 @@
 
 static NSString *const kCellIdentifier = @"cellIdentifier";
 
-@interface ViewController ()<MYBannerScrollViewDelegate, UITableViewDelegate, UITableViewDataSource ,UIScrollViewDelegate, MYTableViewCellDelegate>
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource ,UIScrollViewDelegate, MYBannerScrollViewDelegate, MYTableViewCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -71,7 +71,7 @@ static NSString *const kCellIdentifier = @"cellIdentifier";
 #pragma mark UITableViewDatasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 5;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -86,10 +86,35 @@ static NSString *const kCellIdentifier = @"cellIdentifier";
     }
     cell.delegate = self;
     
-    NSString *imageURL1 = @"http://www.uc129.com/uploads/allimg/150428/1-15042Q04030.jpg";
-    NSString *imageURL2 = @"http://www.people.com.cn/h/pic/20111031/99/15317457967897249011.jpg";
-    NSString *imageURL3 = @"http://school.indexedu.com/data/uploads/picture/westminster_1/20140117144515.jpg";
-    [cell loadTableViewCellWithBannerImages:@[imageURL1, imageURL2, imageURL3]];
+    switch (indexPath.section) {
+        case 0:{
+            NSString *imageURL1 = @"http://www.uc129.com/uploads/allimg/150428/1-15042Q04030.jpg";
+            [cell loadTableViewCellWithBannerImages:@[imageURL1]];
+        }
+            break;
+        case 1:{
+            NSString *imageURL1 = @"http://www.uc129.com/uploads/allimg/150428/1-15042Q04030.jpg";
+            NSString *imageURL2 = @"http://www.people.com.cn/h/pic/20111031/99/15317457967897249011.jpg";
+            [cell loadTableViewCellWithBannerImages:@[imageURL1, imageURL2]];
+        }
+            break;
+        case 2:{
+            NSString *imageURL1 = @"http://www.uc129.com/uploads/allimg/150428/1-15042Q04030.jpg";
+            NSString *imageURL2 = @"http://www.people.com.cn/h/pic/20111031/99/15317457967897249011.jpg";
+            NSString *imageURL3 = @"http://school.indexedu.com/data/uploads/picture/westminster_1/20140117144515.jpg";
+            [cell loadTableViewCellWithBannerImages:@[imageURL1, imageURL2, imageURL3]];
+        }
+            break;
+        case 3:{
+            NSString *imageURL2 = @"http://www.people.com.cn/h/pic/20111031/99/15317457967897249011.jpg";
+            NSString *imageURL3 = @"http://school.indexedu.com/data/uploads/picture/westminster_1/20140117144515.jpg";
+            [cell loadTableViewCellWithBannerImages:@[ imageURL2, imageURL3]];
+        }
+            break;
+        default:
+            break;
+    }
+
     return cell;
 }
 
