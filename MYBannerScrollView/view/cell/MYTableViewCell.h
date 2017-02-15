@@ -19,6 +19,6 @@
 
 @property (assign, nonatomic) id <MYTableViewCellDelegate> delegate;
 
-- (void)loadTableViewCellWithBannerImages:(NSArray *)images;
+- (void)loadTableViewCellWithBannerImages:(NSArray *)images indexPath:(NSIndexPath *)indexPath;
 
 @end

@@ -25,26 +25,6 @@
     return self;
 }
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
-}
-
-#pragma mark MYBannerScrollViewDelegate
-
-- (void)bannerScrollView:(MYBannerScrollView *)bannerScrollView didClickScrollView:(NSInteger)pageIndex{
-    NSLog(@"点击了bannerScrollView:%p 的第%ld张图片",&bannerScrollView ,pageIndex);
-    if(self.delegate){
-        [self.delegate bannerScrollView:bannerScrollView didClickScrollView:pageIndex];
-    }
-}
-
 #pragma mark 控件get方法
 
 - (MYBannerScrollView *)bannerview{
@@ -58,8 +38,18 @@
 
 #pragma mark public methods
 
-- (void)loadTableViewCellWithBannerImages:(NSArray *)images{
+- (void)loadTableViewCellWithBannerImages:(NSArray *)images indexPath:(NSIndexPath *)indexPath{
+    _bannerview.tag = indexPath.section;
     [_bannerview loadImages:images estimateSize:CGSizeMake([UIScreen mainScreen].bounds.size.width, 200)];
+}
+
+#pragma mark MYBannerScrollViewDelegate
+
+- (void)bannerScrollView:(MYBannerScrollView *)bannerScrollView didClickScrollView:(NSInteger)pageIndex{
+    NSLog(@"点击了bannerScrollView:%p 的第%ld张图片",&bannerScrollView ,pageIndex);
+    if(self.delegate){
+        [self.delegate bannerScrollView:bannerScrollView didClickScrollView:pageIndex];
+    }
 }
 
 

@@ -146,8 +146,8 @@
     
     _estimateSize = estimateSize;
     
-    if([_imagePaths count]>1)//此处防止外部多次调用load函数, 导致开启多个定时器（初始化本类时load了一张默认图）
-        return;
+//    if([_imagePaths count]>1)//此处防止外部多次调用load函数, 导致开启多个定时器（初始化本类时load了一张默认图）
+//        return;
     
     _imagePaths = imagePaths;
     if ([_imagePaths count] > 1) {//多张图情况
@@ -158,11 +158,11 @@
         
         if(_enableTimer){
             if(!_timer){//定时器未加载
-        _timer = [NSTimer scheduledTimerWithTimeInterval:_autoDuration target:self selector:@selector(timerDidFired:) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+                _timer = [NSTimer scheduledTimerWithTimeInterval:_autoDuration target:self selector:@selector(timerDidFired:) userInfo:nil repeats:YES];
+                [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
             }
-        [_timer pauseTimer];
-        [_timer resumeTimerAfterTimeInterval:_autoDuration];
+            [_timer pauseTimer];
+            [_timer resumeTimerAfterTimeInterval:_autoDuration];
         }
         else
             [_timer invalidate];
