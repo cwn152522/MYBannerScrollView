@@ -74,18 +74,20 @@
     if(_imageView.image == nil)
         _imageView.image = _failImage;
     
-    UIImage *image = [[MYNetworkProxy defaultProxy] getImageIfExisted:url];
+    [[MYNetworkProxy defaultProxy] autoLoadImageWithURL:url placeholderImage:_failImage toImageView:_imageView];
     
-    if (image) {
-        [_imageView setImage:image];
-        return;
-    }
-        __weak typeof(self) weakSelf = self;
-        [[MYNetworkProxy defaultProxy] fetchImageWithURL:url withFetchResultBlock:^(UIImage *fetchImage, BOOL isCache) {
-         if(fetchImage != nil){
-                [weakSelf.imageView setImage:fetchImage];
-            }
-        }];
+//    UIImage *image = [[MYNetworkProxy defaultProxy] getImageIfExisted:url];
+//    
+//    if (image) {
+//        [_imageView setImage:image];
+//        return;
+//    }
+//        __weak typeof(self) weakSelf = self;
+//        [[MYNetworkProxy defaultProxy] fetchImageWithURL:url withFetchResultBlock:^(UIImage *fetchImage, BOOL isCache) {
+//         if(fetchImage != nil){
+//                [weakSelf.imageView setImage:fetchImage];
+//            }
+//        }];
 }
 
 #pragma mark -Subviews

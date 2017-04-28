@@ -106,7 +106,6 @@
     [_rightImageView setLayoutBottomFromSuperViewWithConstant:0];
     
     [_centerImageView addTarget:self action:@selector(onClickImageView) forControlEvents:UIControlEventTouchUpInside];
-    [self loadImages:@[@"morenbanner"] estimateSize:CGSizeZero];//加载默认图
 }
 
 - (void)configContentViews{
@@ -118,6 +117,7 @@
     [_leftImageView loadImageWithImagePath:[self.imagePaths objectSafetyAtIndex:[self checkNextPageIndex:_currentPageIndex-1]]];
     [_centerImageView loadImageWithImagePath:[self.imagePaths objectSafetyAtIndex:[self checkNextPageIndex:_currentPageIndex]]];
     [_rightImageView loadImageWithImagePath:[self.imagePaths objectSafetyAtIndex:[self checkNextPageIndex:_currentPageIndex+1]]];
+    
     [_scrollView setContentOffset:CGPointMake(_estimateSize.width, 0)];//此处若开启动画属性就会发现：第一或第三张图片url先变化了，然后才滚回第二张图片，显示上一个或下一个url
 }
 
@@ -146,8 +146,8 @@
     
     _estimateSize = estimateSize;
     
-    if([_imagePaths count]>1)//此处防止外部多次调用load函数, 导致开启多个定时器（初始化本类时load了一张默认图）
-        return;
+//    if([_imagePaths count]>1)//此处防止外部多次调用load函数, 导致开启多个定时器（初始化本类时load了一张默认图）
+//        return;
     
     _imagePaths = imagePaths;
     if ([_imagePaths count] > 1) {//多张图情况
@@ -157,10 +157,12 @@
         self.pageControl.currentPage = 0;
         
         if(_enableTimer){
-        _timer = [NSTimer scheduledTimerWithTimeInterval:_autoDuration target:self selector:@selector(timerDidFired:) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
-        [_timer pauseTimer];
-        [_timer resumeTimerAfterTimeInterval:_autoDuration];
+            if(!_timer){//定时器未加载
+                _timer = [NSTimer scheduledTimerWithTimeInterval:_autoDuration target:self selector:@selector(timerDidFired:) userInfo:nil repeats:YES];
+                [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+            }
+            [_timer pauseTimer];
+            [_timer resumeTimerAfterTimeInterval:_autoDuration];
         }
         else
             [_timer invalidate];
@@ -168,9 +170,10 @@
         _scrollView.scrollEnabled = NO;
         [self.pageControl setHidden:YES];
         self.pageControl.numberOfPages = 0;
-        [_timer invalidate];
+        [_timer pauseTimer];
     }
     
+    _currentPageIndex = 0;
     [self configContentViews];
     [_centerImageView addTarget:self action:@selector(onClickImageView) forControlEvents:UIControlEventTouchUpInside];
     

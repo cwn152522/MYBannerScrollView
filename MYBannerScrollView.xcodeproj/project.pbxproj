@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEF9F4E51E52FA7C00C26E93 /* UIView+CWNView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4E41E52FA7C00C26E93 /* UIView+CWNView.m */; };
+		BEF9F4ED1E52FD4000C26E93 /* NSArray+ExtraMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4E81E52FD4000C26E93 /* NSArray+ExtraMethod.m */; };
+		BEF9F4EE1E52FD4000C26E93 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4EA1E52FD4000C26E93 /* NSTimer+Addition.m */; };
+		BEF9F4EF1E52FD4000C26E93 /* UIView+CWNView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4EC1E52FD4000C26E93 /* UIView+CWNView.m */; };
+		BEF9F4F21E52FD5800C26E93 /* MYNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF9F4F11E52FD5800C26E93 /* MYNetwork.framework */; };
+		BEF9F4FD1E52FDA600C26E93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F4FC1E52FDA600C26E93 /* ViewController.m */; };
+		BEF9F5031E5301E100C26E93 /* MYBannerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F5001E5301E100C26E93 /* MYBannerImageView.m */; };
+		BEF9F5041E5301E100C26E93 /* MYBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F5021E5301E100C26E93 /* MYBannerScrollView.m */; };
+		BEF9F5081E53021600C26E93 /* MYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF9F5071E53021600C26E93 /* MYTableViewCell.m */; };
 		D65689DF1DB99DA500CEFFD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65689DE1DB99DA500CEFFD3 /* main.m */; };
 		D65689E21DB99DA500CEFFD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65689E11DB99DA500CEFFD3 /* AppDelegate.m */; };
-		D65689E51DB99DA500CEFFD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65689E41DB99DA500CEFFD3 /* ViewController.m */; };
 		D65689E81DB99DA500CEFFD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65689E61DB99DA500CEFFD3 /* Main.storyboard */; };
 		D65689EA1DB99DA500CEFFD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65689E91DB99DA500CEFFD3 /* Assets.xcassets */; };
 		D65689ED1DB99DA500CEFFD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65689EB1DB99DA500CEFFD3 /* LaunchScreen.storyboard */; };
 		D65689F81DB99DA500CEFFD3 /* MYBannerScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D65689F71DB99DA500CEFFD3 /* MYBannerScrollViewTests.m */; };
 		D6568A031DB99DA500CEFFD3 /* MYBannerScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6568A021DB99DA500CEFFD3 /* MYBannerScrollViewUITests.m */; };
-		D6568A121DB99DD900CEFFD3 /* MYBannerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6568A111DB99DD900CEFFD3 /* MYBannerImageView.m */; };
-		D6568A151DB99E0600CEFFD3 /* MYBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6568A141DB99E0600CEFFD3 /* MYBannerScrollView.m */; };
-		D6568A1B1DB9A64000CEFFD3 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = D6568A1A1DB9A64000CEFFD3 /* NSTimer+Addition.m */; };
-		D6568A1E1DB9A8E300CEFFD3 /* NSArray+ExtraMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = D6568A1D1DB9A8E300CEFFD3 /* NSArray+ExtraMethod.m */; };
-		D6568A201DB9B1BE00CEFFD3 /* MYNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6568A1F1DB9B1BE00CEFFD3 /* MYNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +42,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BEF9F4E31E52FA7C00C26E93 /* UIView+CWNView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CWNView.h"; sourceTree = "<group>"; };
-		BEF9F4E41E52FA7C00C26E93 /* UIView+CWNView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CWNView.m"; sourceTree = "<group>"; };
+		BEF9F4E71E52FD4000C26E93 /* NSArray+ExtraMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ExtraMethod.h"; sourceTree = "<group>"; };
+		BEF9F4E81E52FD4000C26E93 /* NSArray+ExtraMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ExtraMethod.m"; sourceTree = "<group>"; };
+		BEF9F4E91E52FD4000C26E93 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		BEF9F4EA1E52FD4000C26E93 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		BEF9F4EB1E52FD4000C26E93 /* UIView+CWNView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CWNView.h"; sourceTree = "<group>"; };
+		BEF9F4EC1E52FD4000C26E93 /* UIView+CWNView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CWNView.m"; sourceTree = "<group>"; };
+		BEF9F4F11E52FD5800C26E93 /* MYNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MYNetwork.framework; sourceTree = "<group>"; };
+		BEF9F4FB1E52FDA600C26E93 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEF9F4FC1E52FDA600C26E93 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEF9F4FF1E5301E100C26E93 /* MYBannerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerImageView.h; sourceTree = "<group>"; };
+		BEF9F5001E5301E100C26E93 /* MYBannerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerImageView.m; sourceTree = "<group>"; };
+		BEF9F5011E5301E100C26E93 /* MYBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerScrollView.h; sourceTree = "<group>"; };
+		BEF9F5021E5301E100C26E93 /* MYBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerScrollView.m; sourceTree = "<group>"; };
+		BEF9F5061E53021600C26E93 /* MYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYTableViewCell.h; sourceTree = "<group>"; };
+		BEF9F5071E53021600C26E93 /* MYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTableViewCell.m; sourceTree = "<group>"; };
 		D65689DA1DB99DA500CEFFD3 /* MYBannerScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYBannerScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65689DE1DB99DA500CEFFD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D65689E01DB99DA500CEFFD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D65689E11DB99DA500CEFFD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D65689E31DB99DA500CEFFD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D65689E41DB99DA500CEFFD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D65689E71DB99DA500CEFFD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D65689E91DB99DA500CEFFD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D65689EC1DB99DA500CEFFD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,15 +71,6 @@
 		D65689FE1DB99DA500CEFFD3 /* MYBannerScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYBannerScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6568A021DB99DA500CEFFD3 /* MYBannerScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYBannerScrollViewUITests.m; sourceTree = "<group>"; };
 		D6568A041DB99DA500CEFFD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6568A101DB99DD900CEFFD3 /* MYBannerImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerImageView.h; sourceTree = "<group>"; };
-		D6568A111DB99DD900CEFFD3 /* MYBannerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerImageView.m; sourceTree = "<group>"; };
-		D6568A131DB99E0600CEFFD3 /* MYBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYBannerScrollView.h; sourceTree = "<group>"; };
-		D6568A141DB99E0600CEFFD3 /* MYBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYBannerScrollView.m; sourceTree = "<group>"; };
-		D6568A191DB9A64000CEFFD3 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
-		D6568A1A1DB9A64000CEFFD3 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
-		D6568A1C1DB9A8E300CEFFD3 /* NSArray+ExtraMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ExtraMethod.h"; sourceTree = "<group>"; };
-		D6568A1D1DB9A8E300CEFFD3 /* NSArray+ExtraMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ExtraMethod.m"; sourceTree = "<group>"; };
-		D6568A1F1DB9B1BE00CEFFD3 /* MYNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MYNetwork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6568A201DB9B1BE00CEFFD3 /* MYNetwork.framework in Frameworks */,
+				BEF9F4F21E52FD5800C26E93 /* MYNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +99,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEF9F4E61E52FD4000C26E93 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9F4E71E52FD4000C26E93 /* NSArray+ExtraMethod.h */,
+				BEF9F4E81E52FD4000C26E93 /* NSArray+ExtraMethod.m */,
+				BEF9F4E91E52FD4000C26E93 /* NSTimer+Addition.h */,
+				BEF9F4EA1E52FD4000C26E93 /* NSTimer+Addition.m */,
+				BEF9F4EB1E52FD4000C26E93 /* UIView+CWNView.h */,
+				BEF9F4EC1E52FD4000C26E93 /* UIView+CWNView.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		BEF9F4F01E52FD5800C26E93 /* MYNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9F4F11E52FD5800C26E93 /* MYNetwork.framework */,
+			);
+			path = MYNetwork;
+			sourceTree = "<group>";
+		};
+		BEF9F4F31E52FD7C00C26E93 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9F4FE1E5301E100C26E93 /* banner */,
+				BEF9F5051E5301FB00C26E93 /* cell */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BEF9F4FA1E52FD9400C26E93 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9F4FB1E52FDA600C26E93 /* ViewController.h */,
+				BEF9F4FC1E52FDA600C26E93 /* ViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BEF9F4FE1E5301E100C26E93 /* banner */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9F4FF1E5301E100C26E93 /* MYBannerImageView.h */,
+				BEF9F5001E5301E100C26E93 /* MYBannerImageView.m */,
+				BEF9F5011E5301E100C26E93 /* MYBannerScrollView.h */,
+				BEF9F5021E5301E100C26E93 /* MYBannerScrollView.m */,
+			);
+			path = banner;
+			sourceTree = "<group>";
+		};
+		BEF9F5051E5301FB00C26E93 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9F5061E53021600C26E93 /* MYTableViewCell.h */,
+				BEF9F5071E53021600C26E93 /* MYTableViewCell.m */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		D65689D11DB99DA500CEFFD3 = {
 			isa = PBXGroup;
 			children = (
@@ -119,26 +181,17 @@
 		D65689DC1DB99DA500CEFFD3 /* MYBannerScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				D6568A1F1DB9B1BE00CEFFD3 /* MYNetwork.framework */,
-				BEF9F4E31E52FA7C00C26E93 /* UIView+CWNView.h */,
-				BEF9F4E41E52FA7C00C26E93 /* UIView+CWNView.m */,
-				D6568A1C1DB9A8E300CEFFD3 /* NSArray+ExtraMethod.h */,
-				D6568A1D1DB9A8E300CEFFD3 /* NSArray+ExtraMethod.m */,
+				BEF9F4F01E52FD5800C26E93 /* MYNetwork */,
+				BEF9F4E61E52FD4000C26E93 /* category */,
+				BEF9F4F31E52FD7C00C26E93 /* view */,
+				BEF9F4FA1E52FD9400C26E93 /* controller */,
 				D65689E01DB99DA500CEFFD3 /* AppDelegate.h */,
 				D65689E11DB99DA500CEFFD3 /* AppDelegate.m */,
-				D65689E31DB99DA500CEFFD3 /* ViewController.h */,
-				D65689E41DB99DA500CEFFD3 /* ViewController.m */,
 				D65689E61DB99DA500CEFFD3 /* Main.storyboard */,
 				D65689E91DB99DA500CEFFD3 /* Assets.xcassets */,
 				D65689EB1DB99DA500CEFFD3 /* LaunchScreen.storyboard */,
 				D65689EE1DB99DA500CEFFD3 /* Info.plist */,
-				D6568A191DB9A64000CEFFD3 /* NSTimer+Addition.h */,
-				D6568A1A1DB9A64000CEFFD3 /* NSTimer+Addition.m */,
 				D65689DD1DB99DA500CEFFD3 /* Supporting Files */,
-				D6568A101DB99DD900CEFFD3 /* MYBannerImageView.h */,
-				D6568A111DB99DD900CEFFD3 /* MYBannerImageView.m */,
-				D6568A131DB99E0600CEFFD3 /* MYBannerScrollView.h */,
-				D6568A141DB99E0600CEFFD3 /* MYBannerScrollView.m */,
 			);
 			path = MYBannerScrollView;
 			sourceTree = "<group>";
@@ -236,7 +289,7 @@
 				TargetAttributes = {
 					D65689D91DB99DA500CEFFD3 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = J9GKPWKKM7;
+						DevelopmentTeam = 3TQC24HTXA;
 						ProvisioningStyle = Automatic;
 					};
 					D65689F21DB99DA500CEFFD3 = {
@@ -305,14 +358,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6568A1E1DB9A8E300CEFFD3 /* NSArray+ExtraMethod.m in Sources */,
-				D6568A121DB99DD900CEFFD3 /* MYBannerImageView.m in Sources */,
-				BEF9F4E51E52FA7C00C26E93 /* UIView+CWNView.m in Sources */,
-				D65689E51DB99DA500CEFFD3 /* ViewController.m in Sources */,
+				BEF9F4EF1E52FD4000C26E93 /* UIView+CWNView.m in Sources */,
+				BEF9F4FD1E52FDA600C26E93 /* ViewController.m in Sources */,
+				BEF9F5041E5301E100C26E93 /* MYBannerScrollView.m in Sources */,
+				BEF9F4ED1E52FD4000C26E93 /* NSArray+ExtraMethod.m in Sources */,
 				D65689E21DB99DA500CEFFD3 /* AppDelegate.m in Sources */,
-				D6568A151DB99E0600CEFFD3 /* MYBannerScrollView.m in Sources */,
+				BEF9F5081E53021600C26E93 /* MYTableViewCell.m in Sources */,
+				BEF9F5031E5301E100C26E93 /* MYBannerImageView.m in Sources */,
 				D65689DF1DB99DA500CEFFD3 /* main.m in Sources */,
-				D6568A1B1DB9A64000CEFFD3 /* NSTimer+Addition.m in Sources */,
+				BEF9F4EE1E52FD4000C26E93 /* NSTimer+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +515,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J9GKPWKKM7;
+				DEVELOPMENT_TEAM = 3TQC24HTXA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MYBannerScrollView",
+					"$(PROJECT_DIR)/MYBannerScrollView/MYNetwork",
 				);
 				INFOPLIST_FILE = MYBannerScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -478,10 +533,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J9GKPWKKM7;
+				DEVELOPMENT_TEAM = 3TQC24HTXA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MYBannerScrollView",
+					"$(PROJECT_DIR)/MYBannerScrollView/MYNetwork",
 				);
 				INFOPLIST_FILE = MYBannerScrollView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
